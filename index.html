@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ideal Weight App</title>
+	<link rel="stylesheet"  href="jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="docs/_assets/css/jqm-docs.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="jquery.js"></script>
+	<script src="jquery.mobile-1.0.1.min.js"></script>
+	<script src="script.js"> </script>
+</head> 
+
+
+<body> 
+
+<!-- Home -->
+<div data-role="page" id="page1">
+    <div data-theme="b" data-role="header">
+        <h3>
+            My Ideal Weight
+        </h3>
+    </div>
+    <div data-role="content" style="padding: 15px">
+        <h3>
+            Step 1
+        </h3>
+        <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup" data-type="vertical" id="choice">
+                <legend>
+                    Gender:
+                </legend>
+                <input name="radiobuttons1" id="radio1" value="M" type="radio">
+                <label for="radio1">
+                    Male
+                </label>
+                <input name="radiobuttons1" id="radio2" value="F" type="radio">
+                <label for="radio2">
+                    Female
+                </label>
+            </fieldset>
+        </div>
+        <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup">
+                <label for="textinput2">
+                    Age
+                </label>
+                <input id="textinput2" placeholder="22" value="22" type="text">
+            </fieldset>
+        </div>
+        <a data-role="button" data-transition="slide" data-theme="a" href="#page3"
+        data-icon="arrow-r" data-iconpos="right" onclick="check()">
+            Next
+        </a>
+    </div>
+</div>
+<!-- Step 2 -->
+<div data-role="page" data-theme="b" id="page3" data-add-back-btn="true">
+    <div data-theme="b" data-role="header">
+        <h3>
+            My Ideal Weight
+        </h3>
+    </div>
+    <div data-role="content" style="padding: 15px">
+        <h2>
+            Step 2
+        </h2>
+        <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup">
+                <label for="textinput4">
+                    Enter height:
+                </label>
+                <input id="myheightft" placeholder="5" type="text" value=""> 
+                   (ft)
+                <label for="textinput5">
+                	
+                </label>
+                <input id="myheightin" placeholder="6" type="text"value="">
+            		(in)
+            
+            
+            </fieldset>
+        </div>
+        <a data-role="button" onclick="notEmpty();"data-transition="slide" data-theme="a" href="#page4"
+        data-icon="arrow-r" data-iconpos="right">
+            Next
+        </a>
+    </div>
+</div>
+<!-- Final Page -->
+<div data-role="page" id="page4"  data-add-back-btn="true">
+    <div data-theme="b" data-role="header">
+        <h3>
+            My Ideal Weight
+        </h3>
+    </div>
+    <div data-role="content" style="padding: 15px">
+        <h2 id="finalweight">
+            Your ideal weight is:
+        </h2>
+        <div >
+            <p id="center">
+                   <span id="ideal" > </span> <!-- Displays the ideal weight -->
+                
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+
+</script>
+
+</body>
+</html>
